@@ -285,11 +285,11 @@ text-align: center;}
    justify-content: center;
 }
 
-.team-icon-svg:hover{
+.team-item-icon-svg:hover{
   background-color: #404bbf;
 }
 
-.team-icon-svg:focus{
+.team-item-icon-svg:focus{
   background-color: #404bbf;
 }
 
