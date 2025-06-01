@@ -28,6 +28,7 @@ margin: 0 auto;}
 
 .header{ 
   border-bottom: 1px solid #e7e9fc;
+  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container{
@@ -74,7 +75,23 @@ letter-spacing: 0.02em;
 color: #2e2f42;
   padding-top: 24px;
 padding-bottom: 24px;
-display: block;}
+display: block;
+position: relative;
+color: #404bbf;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.nav::after{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+
+}
 
 .nav:hover{color:#404bbf ;}
 .nav:focus{color: #404bbf;}
@@ -88,6 +105,7 @@ color: #434455;
   padding-top: 24px;
 padding-bottom: 24px;
 display: block;
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail-tel:hover{
     color: #404bbf;
@@ -430,5 +448,5 @@ margin-bottom: 16px;
 
 .footer-icon-svg{
   fill: #f4f4fd;
-
 }
+
